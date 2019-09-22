@@ -2,7 +2,7 @@
 # !/usr/bin/python3
 import random
 
-def answer_question():
+def answer_question1():
     # Choose one of the 20 answers for magic_eight
 
     #choose=random.randint(0, 19)
