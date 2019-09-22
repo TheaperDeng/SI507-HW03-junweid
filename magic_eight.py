@@ -4,10 +4,10 @@ import random
 
 question = input("What is your question? ")
 
-def answer_question1():
+def answer_question():
     # Choose one of the 20 answers for magic_eight
     # choose=random.randint(0, 19)
-    choose=random.randint(0, 9)
+    choose=random.randint(0, 19)
 
     ans=[
     "Reply hazy, try again.",
@@ -33,3 +33,10 @@ def answer_question1():
     ]
 
     print(ans[choose])
+
+while(question != "quit"):
+    if (len(question) == 0 or question[-1] != "?"):
+        print("I’m sorry, I can only answer questions.")
+    else:
+        answer_question()
+    question = input("What is your question? ")
